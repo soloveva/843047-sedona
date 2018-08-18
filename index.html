@@ -9,7 +9,7 @@
 		<a class="logo">
 			<img src="img/logo.png" alt="логотип City of" width="140" height="72">
 		</a>
-		<nav class="main-navigation"></nav>
+		<nav class="main-navigation" aria-label="Меню"></nav>
 			<ul>
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="photo-video.html">Фото и Видео</a></li>
@@ -21,7 +21,7 @@
 		<section class="hero">
 			<h1 class="sedona">SEDONA</h1>
 			<p class="sucks">Because the Grand Canyon sucks!</p>
-			<img class="hero-img" src="img/background photo.jpg" alt="логотип SEDONA" width="1200" height="800">
+			<img class="hero-img" src="img/background_photo.jpg" alt="логотип SEDONA" width="1200" height="800">
 			<img class="hero-polygon" src="img/polygon.jpg" width="1201" height="59">
 			<img class="hero-slogan" src="img/welcome.png" width="459" height="353">
 		</section>
@@ -35,11 +35,12 @@
 					<p class="reasons-1-slogan">Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="city-photo">
-					<img src="img/Layer 10.jpg" alt="Фото города" width="800" height="401">
+					<img src="img/reason_1.jpg" alt="Фото города" width="800" height="401">
 				</div>
 			</div>
 		</section>
 		<section class="promotion">
+			<h3 class="visually-hidden">Реклама</h3>
 			<ul class="promotion-list">
 				<li class="promotion-item">
 					<img src="img/icon-1.png" alt="дом" width="75" height="72">
@@ -60,7 +61,7 @@
 		</section>
 		<section class="advantages-2">
 			<div class="photo-bridge">
-				<img src="img/Layer 5.jpg" alt="Фото моста" width="800" height="400">
+				<img src="img/reason_2.jpg" alt="Фото моста" width="800" height="400">
 			</div>
 			<div class="reasons-2-text">
 				<h2 class="reasons-2-title">там есть мост дьявола</h2>
@@ -88,14 +89,35 @@
 			</ul>
 		</section>
 		<section class="search-form">
-			<h2>Заинтересовались?</h2>
+			<h2 class="visually-hidden">Форма поиска</h2>
+			<Span>Заинтересовались?</Span>
+			</button>
 			<p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<span class="button-search">Поиск гостиницы в Седоне</span>
-			< !--здесь будет форма--! >
+			<button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<label>Дата заезда
+					<input id="datestart-search" type="date" name="datestart">
+					<svg id="datestart-search" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+
+				</label>
+				<label> Дата выезда
+					<input id="datefinish-search" type="date" name="datefinish">
+					<svg id="datefinish-search" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+				</label>
+				<label>Взрослые
+					<input type="number" name="amount-adult" min="0" max="100" step="1">
+				</label>
+				<label>Дети
+					<input type="number" name="amount-adult-child" min="0" max="100" step="1">
+				</label>
+				<p><input type="submit" name="search" value="найти"></p>
+			</form>
 		</section>
 		<section class="maps">
-			<span>Карта</span>
-			<img src="img/Прямоугольник 1.jpg" alt="Фото моста" width="1718" height="748">
+			<h2 class="visually-hidden">Расположение Седоны на карте</h2>
+			<p>
+			<img src="img/map.jpg" alt="Седона, Коконино-Каунти, Аризона, Соединенные Штаты Америки" width="1718" height="748">
+			</p>
 		</section>
 	</main>
 	<footer class="main footer">

@@ -9,7 +9,7 @@
 		<a class="logo">
 			<img src="img/logo.png" alt="логотип City of" width="140" height="72">
 		</a>
-		<nav class="main-navigation">
+		<nav class="main-navigation" aria-label="Меню">
 			<ul>
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="photo-video.html">Фото и Видео</a></li>
@@ -20,33 +20,60 @@
 	</header>
 	<main class="inner">
 		<section class="sorting">
-			<img src="img/filter background.jpg" alt="логотип SEDONA" width="1200" height="800">
+			<img src="img/filter_background.jpg" alt="логотип SEDONA" width="1200" height="800">
 			<div class="option">
+				<h2 class="visually-hidden">Выбор отеля</h2>
 				<div class="comfort">
-					<ul>
-						<h3 class="comfort-head">Инфраструктура</h3>
-						<img class="checkbox-on" src="img/checkbox-on.png">
-						<li>басейн</li>
-						<img class="checkbox-off" src="img/checkbox-off.png">
-						<li>парковка</li>
-						<img class="checkbox-off" src="img/checkbox-off.png">
-						<li>wi-fi</li>
-					</ul>
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+						<legend class="comfort-head">Инфраструктура</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-pool" type="checkbox" name="pool">
+								<label for="filter-pool">басейн</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
+								<label for="filter-parking">парковка</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-wi-fi" type="checkbox" name="wi-fi">
+								<label for="filter-wi-fi">wi-fi</label>
+							</li>
+						</ul>
+						</fieldset>
+					</form>
 				</div>
 				<div class="type">
-					<ul>
-						<h3 class="type-head">Тип жилья</h3>
-						<img class="checkbox-on" src="img/checkbox-on.png">
-						<li class="type-option">Гостиница</li>
-						<img class="checkbox-on" src="img/checkbox-on.png">
-						<li class="type-option">Мотель</li>
-						<img class="checkbox-on" src="img/checkbox-on.png">
-						<li class="type-option">Апартаменты</li>
-					</ul>
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+						<legend class="type-head">Тип жилья</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-Hotel" type="checkbox" name="Hotel">
+								<label for="filter-Hotel">Гостиница</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-Motel" type="checkbox" name="Motel">
+								<label for="filter-Motel">Мотель</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" id="filter-Apartment" type="checkbox" name="Apartment">
+								<label for="filter-Apartment">Апартаменты</label>
+							</li>
+						</ul>
+						</fieldset>
+				</form>
 				</div>
 			</div>
 			<div class="price">
-				< !--здесь будт форма--!>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<fieldset>
+						<legend>Стоимость в сутки (р)</legend>
+						0<input type="range" min=" от 0" max=" до 3000" step="1">3000
+						<p><input type="submit" name="demonstrate" value="показать"></p>
+					</fieldset>
+				</form>
 			</div>
 		</section>
 		<section class="selection">
@@ -63,7 +90,7 @@
 		<section class="results">
 			<div class="results-item">
 				<div class="results-item-img">
-					<img src="img/Layer 21.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
+					<img src="img/hotel_01.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
 				</div>
 				<div class="results-item-info">
 					<h3>Amara Resort & Spa</h3>
@@ -79,7 +106,7 @@
 			</div>
 			<div class="results-item">
 				<div class="results-item-img">
-					<img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Фото Desert quail inn">
+					<img src="img/hotel_02.jpg" width="135" height="90" alt="Фото Desert quail inn">
 				</div>
 				<div class="results-item-info">
 					<h3>Desert quail inn</h3>
@@ -95,7 +122,7 @@
 			</div>
 			<div class="results-item-reating">
 				<div class="results-item-img">
-					<img src="img/Layer 22.jpg" width="135" height="90" alt="Фото Villas at poco diablo">
+					<img src="img/hotel_03.jpg" width="135" height="90" alt="Фото Villas at poco diablo">
 				</div>
 				<div class="results-item-info">
 					<h3>Villas at poco diablo</h3>
