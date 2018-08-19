@@ -6,15 +6,15 @@
   </head>
 <body>
 	<header class="main-header">
-		<a class="logo">
+		<a class="logo" href="index.html" area-label="Главная страница">
 			<img src="img/logo.png" alt="логотип City of" width="140" height="72">
 		</a>
 		<nav class="main-navigation" aria-label="Меню">
 			<ul>
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="photo-video.html">Фото и Видео</a></li>
-				<li><a href="maps.html">Карта штата</a></li>
-				<li><a href="hotels.html">Гостиницы</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и Видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="inner.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -23,9 +23,8 @@
 			<img src="img/filter_background.jpg" alt="логотип SEDONA" width="1200" height="800">
 			<div class="option">
 				<h2 class="visually-hidden">Выбор отеля</h2>
-				<div class="comfort">
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<fieldset>
+						<fieldset class="comfort">
 						<legend class="comfort-head">Инфраструктура</legend>
 						<ul>
 							<li class="filter-option">
@@ -42,11 +41,7 @@
 							</li>
 						</ul>
 						</fieldset>
-					</form>
-				</div>
-				<div class="type">
-					<form action="https://echo.htmlacademy.ru" method="post">
-						<fieldset>
+						<fieldset class="type">
 						<legend class="type-head">Тип жилья</legend>
 						<ul>
 							<li class="filter-option">
@@ -63,17 +58,11 @@
 							</li>
 						</ul>
 						</fieldset>
-				</form>
-				</div>
-			</div>
-			<div class="price">
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<fieldset>
-						<legend>Стоимость в сутки (р)</legend>
-						0<input type="range" min=" от 0" max=" до 3000" step="1">3000
-						<p><input type="submit" name="demonstrate" value="показать"></p>
-					</fieldset>
-				</form>
+						<fieldset class="price">
+							<legend>Стоимость в сутки (р)</legend>
+							0<input type="range" min=" от 0" max=" до 3000" step="1">3000
+							<p><input type="submit" name="demonstrate" value="показать"></p>
+						</fieldset>
 			</div>
 		</section>
 		<section class="selection">
