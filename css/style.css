@@ -567,11 +567,13 @@ max-width: 100%;
   margin-bottom: 0px;
 }
 
-
 .form-option {
   display: flex;
   justify-content: flex-start;
   padding-top: 28px;
+  width: 241px;
+  height: 218px;
+
 }
 
 .comfort {
@@ -580,10 +582,14 @@ padding-left: 73px;
 
 .type {
   padding-left: 110px;
+  width: 288px;
+  height: 219px;
 }
 
 .price {
-   padding-left: 349px;
+  width: 328px;
+  height: 219px;
+  padding-left: 349px;
 }
 
 .selection {
@@ -644,6 +650,8 @@ padding-left: 73px;
   display: flex;
   flex-direction: column;
   padding-top: 32px;
+  width: 241px;
+  height: 155px;
 }
 
 .results-item-rating-img {
