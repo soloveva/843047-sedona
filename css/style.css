@@ -230,28 +230,7 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
-.search {
-  font: inherit;
 
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-
-  background-color: #81b3d2;
-  border: none;
-}
-
-.search:hover {
-  background-color: #669ec0;
-}
-.search:focus {
-  background-color: #81b3d2;
-}
-.search:active {
-  background-color: #5496bd;
-}
 
 .form-search {
   background-color: #fff;
@@ -432,13 +411,18 @@ input[type="submit"]:hover {
 }
 
 .results-item-ratingtext {
+  
   width: 110px;
   height: 27px;
   text-align: center;
   font-weight: normal;
   color: #666;
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; 
 
+  display: inline-block;
+  
+  margin-right: 73px;
+  margin-top: 95px;
 }
 
 
@@ -581,8 +565,6 @@ height: auto;
 .form-option {
   display: flex;
   padding-top: 28px;
-  width: 241px;
-  height: 218px;
 }
 
 .comfort {
@@ -839,13 +821,6 @@ margin-left: 0px;
   background-position: 0 0;
 }
 
-.results-item-ratingtext {
-  display: inline-block;
-  padding: 3px 16px;
-  margin-right: 73px;
-   margin-top: 95px;
-}
-
 .social-button {
   display: flex;
   align-items: center;
@@ -894,3 +869,187 @@ margin-left: 0px;
   padding-bottom: 12px;
 }
 
+
+/* Всплывающая форма */
+
+.search-form {
+  width:1200px;
+  height: 291px;
+}
+
+.interest {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 55px;
+}
+
+.button-search {
+  display: inline-block;
+  padding: 30px 140px;
+  margin-top: 52px;
+  margin-left: 316px; 
+ 
+  
+}
+
+.form-search {
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  top: 2248px;
+  left: 348px;
+  width: 568px;
+  height: 395px;
+}
+
+.values-arrive {
+  padding-top: 55px;
+  padding-left: 55px;
+}
+
+.values-departure, .values-adults {
+  padding-left: 55px;
+}
+
+.form-search p {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+
+}
+
+.form-search input[type="date"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 346px;
+  padding: 6px 13px;
+  padding-right: 44px;
+  background-color: #f2f2f2;
+
+}
+
+.form-search input[type="number"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 114px;
+  padding: 6px 38px;
+  background-color: #f2f2f2;
+}
+
+.form-search input[type="date"]:hover {
+  background-color: #ebebeb;
+}
+
+.form-search input[type="date"]:focus {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.form-search input[type="number"]:hover {
+  background-color: #ebebeb;
+}
+
+.form-search input[type="number"]:focus {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+
+.date {
+  background-image: url("../img/calendar.svg");
+  background-position: 317px center;
+  background-repeat: no-repeat;
+}
+
+.date {
+  background-image: url("../img/calendar.svg");
+  background-position: 317px center;
+  background-repeat: no-repeat;
+}
+
+.search {
+  font: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+
+  position: absolute;
+  background-color: #81b3d2;
+  border: none;
+
+  top: 282px;
+  left: 55px;
+  width: 458px;
+  height: 58px;
+  
+}
+
+.search:hover {
+  background-color: #669ec0;
+}
+
+.search:active {
+  background-color: #5496bd;
+}
+
+
+/* Чекбоксы */
+.filter-input-checkbox {
+  position: relative;
+  width: 27px;
+  height: 23px
+  display: block;
+}
+
+ input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0px;
+  left: -72px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.png"); 
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+
+}
+
+.filter-input-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #fff;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+ input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/checkbox-on.png"); 
+  background-repeat: no-repeat;
+}
+
+
+.filter-option {
+  margin-bottom: 23px;
+}
+
+
+
+.maps-img {
+  height: 473px;  
+  overflow-y: hidden;
+}
