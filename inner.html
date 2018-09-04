@@ -18,7 +18,7 @@
 					<img src="img/logo.png" alt="логотип City of" width="140" height="72">
 				</a>
 				<li><a class="item-navigation-name" href="#">Карта штата</a></li>
-				<li><a class="item-navigation-name" href="inner.html">Гостиницы</a></li>
+				<li><a class="item-navigation-name location" href="inner.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -31,22 +31,22 @@
 						<legend class="comfort-head">Инфраструктура:</legend>
 						<ul class="filter-list">
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="pool">
+								<input class="visually-hidden" id="pool" type="checkbox" name="pool" checked>
+								<label for="pool" class="filter-input-checkbox">
 								<span class="checkbox-indicator"></span>
 								басейн
 							</label>
 							</li>
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="parking">
+								<input class="visually-hidden" type="checkbox" name="parking" id="parking">
+								<label class="filter-input-checkbox" for="parking">
 								<span class="checkbox-indicator"></span>
 								парковка
 							</label>
 							</li>
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="wi-fi">
+								<input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+								<label class="filter-input-checkbox" for="wi-fi">
 								<span class="checkbox-indicator"></span>
 								wi-fi
 							</label>
@@ -57,22 +57,22 @@
 						<legend class="type-head">Тип жилья:</legend>
 						<ul class="filter-list">
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="Hotel">
+								<input class="visually-hidden" type="checkbox" name="Hotel" id="Hotel" checked>
+								<label class="filter-input-checkbox" for="Hotel">
 								<span class="checkbox-indicator"></span>
 								Гостиница
 							</label>
 							</li>
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="Motel">
+								<input class="visually-hidden" type="checkbox" name="Motel" id="Motel" checked>
+								<label class="filter-input-checkbox" for="Motel">
 								<span class="checkbox-indicator"></span>
 								Мотель
 							</label>
 							</li>
 							<li class="filter-option">
-								<label class="filter-input-checkbox">
-								<input class="visually-hidden" type="checkbox" name="Apartment">
+								<input class="visually-hidden" type="checkbox" name="Apartment" id="Apartment" checked>
+								<label class="filter-input-checkbox" for="Apartment">
 								<span class="checkbox-indicator"></span>
 								Апартаменты
 							</label>
@@ -221,7 +221,7 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
-			<span class="website-inner">Website by</span>
+			<span class="website">Website by</span>
 			<a class="htmlacademy" href="https://htmlacademy.ru/">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="115px" height="41px" viewBox="0 0 115 41" style="enable-background:new 0 0 115 41;" xml:space="preserve">
 					<path id="html-academy-logo" fill="#231F20" d="M47.9,29.8c-0.2,0.1-0.4,0.1-0.6,0.1c-0.4,0-0.6-0.2-0.6-0.7v-3.3c0-2.8-1.6-4.1-4.1-4.1
