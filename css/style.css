@@ -921,7 +921,7 @@ margin-left: 0px;
 .button-search {
   display: inline-block;
   padding: 30px 140px;
-  margin-top: 52px;
+  margin-top: 38px;
   margin-left: 316px; 
   cursor: pointer;
 }
@@ -945,6 +945,12 @@ margin-left: 0px;
   justify-content: flex-start;
   padding: 0px;
   margin: 0px;
+  animation-name: animation;
+  animation-duration: 0.4s;
+
+  display: none;
+
+
 }
 
 .values-arrive {
@@ -1003,6 +1009,7 @@ margin-left: 0px;
   outline: none;
   cursor: pointer;
   border: 1px solid #f2f2f2;
+
 }
 
 .form-search input[type="number"] {
@@ -1215,4 +1222,38 @@ svg:active #html-academy-logo {
 
 li .location {
   color: #766357;
+}
+
+
+.modal-open {
+  
+ animation-duration: 0.4s;
+}
+
+.modal-close {
+  display: block;
+}
+
+
+@keyframes animation {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  70% {
+    transform: translateY(-50px);
+  }
+
+  90% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.maps {
+  padding-bottom: 0px;
 }
