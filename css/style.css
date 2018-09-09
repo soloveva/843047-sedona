@@ -23,6 +23,19 @@ body {
   margin-bottom: 60px;
 }
 
+.info {
+  margin-left: 70px;
+  margin-right: 146px;
+}
+
+.foto-video {
+  margin-right: 390px;
+}
+
+.map-state {
+  margin-right: 165px;
+}
+
 a {
   text-decoration: none;
 }
@@ -462,7 +475,7 @@ height: auto;
   height: 56px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 0px;
   align-items: center;
   margin: 0px;
@@ -471,13 +484,12 @@ height: auto;
 }
 
 .logo {
-  margin-top: 22px;
-  margin-left: -20px;
-
-}
-
-.info {
-margin-left: -5px;
+  position: absolute;
+    top: 0;
+    left: 44.35%;
+    width: 138px;
+    height: 70px;
+    z-index: 1;
 }
 
 
@@ -575,7 +587,8 @@ margin-left: -5px;
 
 .filter-range {
   align-self: center;
-  margin-right: 58px;
+  margin-right: 74px;
+  margin-top: -5px;
 }
 
 .form-option {
@@ -752,7 +765,7 @@ margin-left: 30px;
 
 /* ----- Фильтер ----- */
 .filter-range {
-  width: 330px;
+  width: 318px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -760,6 +773,7 @@ margin-left: 30px;
 
 .filter-range-title {
   margin-bottom: 9px;
+  margin-left: 5px;
 
   font-weight: 600;
   font-size: 16px;
@@ -769,7 +783,7 @@ margin-left: 30px;
 .price-controls {
   position: relative;
   
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -804,7 +818,10 @@ margin-left: 30px;
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 63px;
+  margin-top: -5px;
+
+  font-weight: normal;
 }
 
 .price-controls input {
@@ -1022,11 +1039,6 @@ margin-left: 0px;
   margin-bottom: 29px;
 }
 
-.values-adults {
-  width: 226px;
-  margin-left: 55px;
-}
-
 .form-left-1 {
    margin-top: 3px;
   margin-left: 19px;
@@ -1037,7 +1049,7 @@ margin-left: 0px;
 }
 
 .form-left-3 {
-  margin-left: 38px;
+ padding-left: 5px;
   margin-top: 3px;
   text-align: center;
 }
@@ -1169,19 +1181,36 @@ margin-left: 0px;
   position: relative;
   width: 250px;
 }
-
 .form-minus-child {
   position: absolute;
 
   top: 15px;
-  left: 80px;
+  left: 143px;
+}
+
+.values-child {
+  margin-right: 68px;
+}
+
+.values-adults {
+  margin-left: 54px;
+  margin-right: -9px;
+}
+
+.adult-margin {
+  margin-top: 13px;
+}
+
+.child-margin {
+   margin-left: 60px;
+  margin-top: 13px;
 }
 
 .form-plus-child {
   position: absolute;
 
   top: 15px;
-  left: 162px;
+  left: 215px;
 }
 
 .form-minus-adults {
@@ -1195,7 +1224,7 @@ margin-left: 0px;
   position: absolute;
 
   top: 15px;
-  left: 198px;
+  left: 201px;
 }
 
 /* ---------------Чекбоксы------------ */
@@ -1264,11 +1293,11 @@ input[type="checkbox"]:disabled + label > .checkbox-indicator {
   background-image: url("../img/map.jpg");
 }
 
-svg:hover #html-academy-logo {
+svg:hover path {
     fill: #81b3d2;
 }
 
-svg:active #html-academy-logo {
+svg:active path {
     fill: #bdbbbc;
 }
 
