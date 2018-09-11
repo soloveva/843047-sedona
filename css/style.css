@@ -84,6 +84,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #000;
   background-color: #fff;
+  white-space: pre-line;
 }
 
 .reasons {
@@ -107,6 +108,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   padding-top: 30px;
   padding-bottom: 7px;
+  white-space: pre-line;
 }
 
 .reasons-1-number {
@@ -120,6 +122,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #fff;
   font-weight: normal;
+  white-space: pre-line;
 }
 
 .promotion {
@@ -144,6 +147,8 @@ input[type="radio"].visually-hidden {
 .promotion-text {
   text-align: center;
   color: #333;
+  white-space: pre-line;
+  font-weight: normal; 
 }
 
 .final-reasons {
@@ -162,6 +167,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   padding-top: 30px;
   padding-bottom: 7px;
+  white-space: pre-line
 }
 
 .reasons-2-number {
@@ -175,6 +181,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #fff;
   font-weight: normal;
+  white-space: pre-line
 }
 
 .advantages-3 {
@@ -188,6 +195,7 @@ input[type="radio"].visually-hidden {
   color: #000;
   padding-top: 42px;
   padding-bottom: 4px;
+  white-space: pre-line
 }
 
 .final-reasons-number {
@@ -208,6 +216,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal; 
   padding-left: 3px;
   margin-bottom: 20px;
+  white-space: pre-line
 }
 
 .search-form {
@@ -222,6 +231,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   margin-left: 5px;
   margin-bottom: 9px;
+  white-space: pre-line
 
 }
 
@@ -400,6 +410,9 @@ input[type="submit"]:hover {
   border: none;
 }
 
+.price:hover {
+  cursor: pointer;
+}
 
   .results-name {
   text-align: left;
@@ -639,11 +652,17 @@ margin-left: 30px;
   padding-left: 472px;
   align-self: center;
   margin-top:5px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .selection-switcher-2 {
   padding-left: 11px;
   margin-top:5px;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .selection-switcher-1 polygon {
@@ -1181,12 +1200,6 @@ margin-left: 0px;
   position: relative;
   width: 250px;
 }
-.form-minus-child {
-  position: absolute;
-
-  top: 15px;
-  left: 143px;
-}
 
 .values-child {
   margin-right: 68px;
@@ -1206,11 +1219,25 @@ margin-left: 0px;
   margin-top: 13px;
 }
 
+.form-minus-child {
+  position: absolute;
+
+  top: 15px;
+  left: 143px;
+
+  background: none;
+  border: none;
+  outline: none
+}
+
 .form-plus-child {
   position: absolute;
 
   top: 15px;
   left: 215px;
+  background: none;
+  border: none;
+  outline: none
 }
 
 .form-minus-adults {
@@ -1218,6 +1245,9 @@ margin-left: 0px;
 
   top: 15px;
   left: 127px;
+  background: none;
+  border: none;
+  outline: none
 }
 
 .form-plus-adults {
@@ -1225,6 +1255,9 @@ margin-left: 0px;
 
   top: 15px;
   left: 201px;
+  background: none;
+  border: none;
+  outline: none
 }
 
 /* ---------------Чекбоксы------------ */
