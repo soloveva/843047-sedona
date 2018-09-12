@@ -11,14 +11,12 @@
 	<div class="big-container">
 		<header class="main-header">
 			<nav class="main-navigation" aria-label="Меню">
+				<a class="logo" href="index.html">
+					<img src="img/logo.png" alt="логотип City of" width="140" height="72">
+				</a>
 				<ul class="item-navigation">
 					<li><a class="item-navigation-name info" href="#">Информация</a></li>
 					<li><a class="item-navigation-name foto-video" href="#">Фото и Видео</a></li>
-					<li>
-						<a class="logo" href="index.html">
-							<img src="img/logo.png" alt="логотип City of" width="140" height="72">
-						</a>
-					</li>
 					<li><a class="item-navigation-name map-state" href="#">Карта штата</a></li>
 					<li><a class="item-navigation-name location" href="inner.html">Гостиницы</a></li>
 				</ul>
@@ -27,63 +25,62 @@
 		<main class="inner">
 			<section class="sorting">
 				<div class="option">
-					<h2 class="visually-hidden">Выбор отеля</h2>
+				<h2 class="visually-hidden">Выбор отеля</h2>
 					<form class="form-option" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset class="comfort">
-							<legend class="comfort-head">Инфраструктура:</legend>
-							<ul class="filter-list">
-								<li class="filter-option">
-									<input class="visually-hidden" id="pool" type="checkbox" name="pool" checked>
-									<label for="pool" class="filter-input-checkbox">
-										<span class="checkbox-indicator"></span>
-										басейн
-									</label>
-								</li>
-								<li class="filter-option">
-									<input class="visually-hidden" type="checkbox" name="parking" id="parking">
-									<label class="filter-input-checkbox" for="parking">
-										<span class="checkbox-indicator"></span>
-										парковка
-									</label>
-								</li>
-								<li class="filter-option">
-									<input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-									<label class="filter-input-checkbox" for="wi-fi">
-										<span class="checkbox-indicator"></span>
-										wi-fi
-									</label>
-								</li>
-							</ul>
+						<legend class="comfort-head">Инфраструктура:</legend>
+						<ul class="filter-list">
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="pool" checked>
+								<span class="checkbox-indicator"></span>
+								басейн
+							</label>
+							</li>
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="parking">
+								<span class="checkbox-indicator"></span>
+								парковка
+							</label>
+							</li>
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="wi-fi">
+								<span class="checkbox-indicator"></span>
+								wi-fi
+							</label>
+							</li>
+						</ul>
 						</fieldset>
 						<fieldset class="type">
-							<legend class="type-head">Тип жилья:</legend>
-							<ul class="filter-list">
-								<li class="filter-option">
-									<input class="visually-hidden" type="checkbox" name="Hotel" id="Hotel" checked>
-									<label class="filter-input-checkbox" for="Hotel">
-										<span class="checkbox-indicator"></span>
-										Гостиница
-									</label>
-								</li>
-								<li class="filter-option">
-									<input class="visually-hidden" type="checkbox" name="Motel" id="Motel" checked>
-									<label class="filter-input-checkbox" for="Motel">
-										<span class="checkbox-indicator"></span>
-										Мотель
-									</label>
-								</li>
-								<li class="filter-option">
-									<input class="visually-hidden" type="checkbox" name="Apartment" id="Apartment" checked>
-									<label class="filter-input-checkbox" for="Apartment">
-										<span class="checkbox-indicator"></span>
-										Апартаменты
-									</label>
-								</li>
-							</ul>
+						<legend class="type-head">Тип жилья:</legend>
+						<ul class="filter-list">
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="Hotel" checked>
+								<span class="checkbox-indicator"></span>
+								Гостиница
+							</label>
+							</li>
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="Motel" checked>
+								<span class="checkbox-indicator"></span>
+								Мотель
+							</label>
+							</li>
+							<li class="filter-option">
+								<label class="filter-input-checkbox">
+								<input class="visually-hidden" type="checkbox" name="Apartment" checked>
+								<span class="checkbox-indicator"></span>
+								Апартаменты
+							</label>
+							</li>
+						</ul>
 						</fieldset>
-					</form>
-				</div>
-				<form class="filter-range">
+			</div>
+				<div class="filter-range">
 					<div class="filter-range-title">Стоимость в сутки (р):</div>
 					<div class="price-controls">
 						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -97,6 +94,7 @@
 						<div class="range-toggle range-toggle-max"></div>
 					</div>
 					<button class="btn-transparent" type="submit">Показать</button>
+				</div>
 				</form>
 			</section>
 			<section class="selection">
@@ -227,7 +225,7 @@
 	</div>
 	<div class="footer-copyright">
 		<span class="website">Website by</span>
-		<a class="htmlacademy" href="https://htmlacademy.ru/">
+		<a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="115px" height="41px" viewBox="0 0 115 41" style="enable-background:new 0 0 115 41;" xml:space="preserve">
 				<path id="html-academy-logo" fill="#231F20" d="M47.9,29.8c-0.2,0.1-0.4,0.1-0.6,0.1c-0.4,0-0.6-0.2-0.6-0.7v-3.3c0-2.8-1.6-4.1-4.1-4.1
 				c-1.4,0-2.7,0.4-3.4,0.6v1.9c0.8-0.4,1.9-0.7,3.2-0.7c1.5,0,2.3,0.8,2.3,2v0.3c-0.7-0.2-1.6-0.3-2.3-0.3c-1.9,0-4,0.7-4,3.1

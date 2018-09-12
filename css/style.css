@@ -13,27 +13,28 @@ body {
 .hero {
   background-color: #fff;
   background-image: 
-    url("../img/welcome.png"),
-    url("../img/background_photo.jpg");
+    url("../img/welcome.svg"),
+    url("../img/polygon.svg"),
+    url("../img/background_photo1.jpg");
   background-repeat: no-repeat;
-  background-position: 370px 75px, -1px -55px;
+  background-position: 370px 75px, 0px 451px,  -1px -55px;
+  background-size: 459px 353px, 1201px 59px, auto auto;
 
   height: 508px;  
   overflow-y: hidden;
   margin-bottom: 60px;
 }
 
-.info {
-  margin-left: 70px;
-  margin-right: 146px;
+.item-navigation-name {
+  width: 100px;
 }
 
-.foto-video {
-  margin-right: 390px;
+.info, .foto-video {
+  text-align: left;
 }
 
-.map-state {
-  margin-right: 165px;
+.map-state, .hotels {
+  text-align: right;
 }
 
 a {
@@ -84,7 +85,8 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   color: #000;
   background-color: #fff;
-  white-space: pre-line;
+  width: 446px;
+  margin: 0 auto;
 }
 
 .reasons {
@@ -106,23 +108,25 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #fff;
-  padding-top: 30px;
+  padding-top: 48px;
   padding-bottom: 7px;
-  white-space: pre-line;
+  width: 124px;
+  margin: 0 auto;
 }
 
 .reasons-1-number {
   text-align: center;
   color: #fff;
   font-weight: normal;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 
 .reasons-1-slogan {
   text-align: center;
   color: #fff;
   font-weight: normal;
-  white-space: pre-line;
+  width: 284px;
+  margin: 0 auto;
 }
 
 .promotion {
@@ -147,8 +151,22 @@ input[type="radio"].visually-hidden {
 .promotion-text {
   text-align: center;
   color: #333;
-  white-space: pre-line;
-  font-weight: normal; 
+  padding-bottom: 15px;
+}
+
+.promo-1 {
+width: 254px;
+margin: 0 auto;
+}
+
+.promo-2 {
+width: 290px;
+margin: 0 auto;
+}
+
+.promo-3 {
+width: 276px;
+margin: 0 auto;
 }
 
 .final-reasons {
@@ -165,23 +183,25 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #fff;
-  padding-top: 30px;
+  padding-top: 48px;
   padding-bottom: 7px;
-  white-space: pre-line
+  width: 151px;
+  margin: 0 auto;
 }
 
 .reasons-2-number {
   text-align: center;
   color: #fff;
   font-weight: normal;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .reasons-2-slogan {
   text-align: center;
   color: #fff;
   font-weight: normal;
-  white-space: pre-line
+  width: 305px;
+  margin: 0 auto;
 }
 
 .advantages-3 {
@@ -193,16 +213,46 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   color: #000;
-  padding-top: 42px;
-  padding-bottom: 4px;
-  white-space: pre-line
+  padding-top: 63px;
+  padding-bottom: 8px;
 }
+
+.title3 {
+  width: 124px;
+  margin: 0 auto;
+}
+
+.title4 {
+  width: 103px;
+  margin: 0 auto;
+}
+
+.title5 {
+  width: 105px;
+  margin: 0 auto;
+}
+
+.final-reasons3 {
+width: 211px;
+margin: 0 auto;
+}
+
+.final-reasons4 {
+  width: 267px;
+margin: 0 auto;
+}
+
+.final-reasons5 {
+  width: 250px;
+margin: 0 auto;
+}
+
 
 .final-reasons-number {
   text-align: center;
   color: #333;
   font-weight: normal;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
   padding-left: 3px;
 }
 
@@ -232,7 +282,6 @@ input[type="radio"].visually-hidden {
   margin-left: 5px;
   margin-bottom: 9px;
   white-space: pre-line
-
 }
 
 .button-search {
@@ -286,18 +335,17 @@ input[type="radio"].visually-hidden {
 
 .hashtag {
   color: #000000;
-  background-color: #fff;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
-   margin-top: 10px;
-   margin-left: 20px;
+   margin-top: 8px;
+   margin-left: 18px;
 }
 
 .social {
   list-style: none;
-   margin-top: 10px;
-   margin-left: -20px;
+   margin-top: 6px;
+   margin-left: -18px;
 }
 
 .footer-social {
@@ -578,6 +626,7 @@ height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 
 }
 
@@ -1061,10 +1110,14 @@ margin-left: 0px;
 .form-left-1 {
    margin-top: 3px;
   margin-left: 19px;
+  padding-left: 13px;
+  padding-right: 33px;
 }
 
 .form-left-2 {
   margin-left: 16px;
+   padding-left: 13px;
+  padding-right: 33px;
 }
 
 .form-left-3 {
@@ -1118,7 +1171,8 @@ margin-left: 0px;
   outline: none;
   cursor: pointer;
   margin-top: 5px;
-  padding-left: 13px;
+  padding-left: 26px;
+  padding-right: 10px;
 }
 
 .form-search input[type="text"]:hover {
@@ -1223,7 +1277,7 @@ margin-left: 0px;
   position: absolute;
 
   top: 15px;
-  left: 143px;
+  left: 133px;
 
   background: none;
   border: none;
@@ -1234,7 +1288,7 @@ margin-left: 0px;
   position: absolute;
 
   top: 15px;
-  left: 215px;
+  left: 210px;
   background: none;
   border: none;
   outline: none
@@ -1244,7 +1298,7 @@ margin-left: 0px;
   position: absolute;
 
   top: 15px;
-  left: 127px;
+  left: 120px;
   background: none;
   border: none;
   outline: none
@@ -1254,7 +1308,7 @@ margin-left: 0px;
   position: absolute;
 
   top: 15px;
-  left: 201px;
+  left: 196px;
   background: none;
   border: none;
   outline: none
@@ -1263,13 +1317,13 @@ margin-left: 0px;
 /* ---------------Чекбоксы------------ */
 
 .filter-input-checkbox {
-  display: block;
-  padding-left: 8px;
   position: relative;
+  width: 27px;
   height: 23px
+  display: block;
 }
 
- input[type="checkbox"] + label > .checkbox-indicator {
+ input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
   left: -33px;
@@ -1277,37 +1331,26 @@ margin-left: 0px;
   width: 27px;
   height: 23px;
 
+  background-image: url("../img/checkbox-off.svg"); 
+  background-repeat: no-repeat;
+  stroke-color: red;
+
+
+
   cursor: pointer;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #fff;
-  border-radius: 2px;
-} 
 
- input[type="checkbox"]:checked + label >  .checkbox-indicator::before {
-   content: "";
-   position: absolute;
-   top: 8px;
-   left: 2px;
-   width: 11px;
-   height: 4px;
-   background-color: #fff;
-   transform: rotate(45deg);
- }
-
- input[type="checkbox"]:checked + label >  .checkbox-indicator::after {
-   content: "";
-   position: absolute;
-   top: 5px;
-   left: 6px;
-   width: 20px;
-   height: 4px;
-   background-color: #fff;
-   transform: rotate(-45deg);
 }
 
-input[type="checkbox"]:disabled + label > .checkbox-indicator {
-    border-color: rgba(255, 255, 255, 0.5);
+.filter-input-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #fff;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+ input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/checkbox-on.svg"); 
+  background-repeat: no-repeat;
+
 }
 
 .filter-option {
@@ -1318,6 +1361,11 @@ input[type="checkbox"]:disabled + label > .checkbox-indicator {
   margin-left: 3px;
   padding-left: 0px;
 }
+
+input[type="checkbox"]:disabled + label > .checkbox-indicator {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
 
 /* ------------------*/
 
@@ -1345,6 +1393,7 @@ svg:active path {
 .website {
   display: block;
   margin-right: 8px;
+  margin-top: -5px;
 }
 
 li .location {
@@ -1364,7 +1413,7 @@ li .location {
 
 @keyframes animation {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(100px);
   }
 
   70% {
@@ -1493,7 +1542,7 @@ li .location {
 
   .reasons-5 {
   position: relative;
-   
+  padding-right: 3px;
 }
 
 .line5::before {
@@ -1524,4 +1573,5 @@ li .location {
 .hashtag-inner {
  margin-right: 10px;
 }
+
 
