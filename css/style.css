@@ -25,17 +25,59 @@ body {
   margin-bottom: 60px;
 }
 
+.item-navigation {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .item-navigation-name {
-  width: 100px;
+  width: 80px;
 }
 
-.info, .foto-video {
+.info {
   text-align: left;
+  padding-left: 30px;
+  padding-right:150px;
 }
 
-.map-state, .hotels {
-  text-align: right;
+.foto-video {
+  text-align: left;
+  padding-right: 388px;
 }
+
+.map-state {
+ text-align: right;
+  padding-right: 165px;
+} 
+
+.hotels {
+  text-align: right;
+  
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 530px;
+  width: 138px;
+  height: 70px;
+  z-index: 1;
+}
+
 
 a {
   text-decoration: none;
@@ -227,6 +269,7 @@ input[type="radio"].visually-hidden {
 .title4 {
   width: 103px;
   margin: 0 auto;
+  padding-right: -10px;
 }
 
 .title5 {
@@ -516,36 +559,6 @@ img {
   box-shadow: 5px 0 10px rgba(0,0,0,.1), -5px 0 10px rgba(0,0,0,.1);
   position: relative;
 }
-
-.item-navigation {
-  height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  padding: 0px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0px;
-  margin-left: 2px;
-
-}
-
-.logo {
-  position: absolute;
-  top: 0;
-  left: 44.35%;
-  width: 138px;
-  height: 70px;
-  z-index: 1;
-}
-
-
 
 .reasons-1 {
   display: -webkit-box;
@@ -1208,7 +1221,7 @@ img {
 }
 
 .form-left-1 {
- margin-top: 3px;
+ margin-top: 1px;
  margin-left: 19px;
  padding-left: 13px;
  padding-right: 33px;
@@ -1430,7 +1443,8 @@ img {
   display: block;
   position: relative;
   width: 50px;
-  height: 23px
+  height: 23px;
+  padding-left: 6px;
 }
 
 input[type="checkbox"] + .checkbox-indicator {
@@ -1508,7 +1522,7 @@ svg:active path {
   margin-top: -5px;
 }
 
-li .location {
+li .hotels {
   color: #766357;
 }
 
@@ -1587,7 +1601,7 @@ li .location {
 .reasons-1-number::before {
   content: "";
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 173px;
   width: 9px;
   height: 1px;
@@ -1597,7 +1611,7 @@ li .location {
 .reasons-1-number::after {
   content: "";
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 217px;
   width: 9px;
   height: 1px;
@@ -1612,7 +1626,7 @@ li .location {
 .reasons-2-number::before {
   content: "";
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 173px;
   width: 9px;
   height: 1px;
@@ -1622,7 +1636,7 @@ li .location {
 .reasons-2-number::after {
   content: "";
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 217px;
   width: 9px;
   height: 1px;
@@ -1638,7 +1652,7 @@ li .location {
 .line3::before {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 82px;
   width: 9px;
   height: 1px;
@@ -1648,7 +1662,7 @@ li .location {
 .line3::after {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 123px;
   width: 9px;
   height: 1px;
@@ -1664,7 +1678,7 @@ li .location {
 .line4::before {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 123px;
   width: 9px;
   height: 1px;
@@ -1674,7 +1688,7 @@ li .location {
 .line4::after {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 167px;
   width: 9px;
   height: 1px;
@@ -1689,7 +1703,7 @@ li .location {
 .line5::before {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 98px;
   width: 9px;
   height: 1px;
@@ -1699,7 +1713,7 @@ li .location {
 .line5::after {
   content: "";
   position: absolute;
-  top: 140px;
+  top: 138px;
   left: 140px;
   width: 9px;
   height: 1px;
