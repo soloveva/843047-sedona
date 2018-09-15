@@ -8,11 +8,16 @@ var child = popup.querySelector("[name=amount-adult-child]");
 var storage1 = localStorage.getItem("adult");
 var storage2 = localStorage.getItem("child");
 
+popup.classList.add("modal-close");
 search.addEventListener("click", function (evt) {
   evt.preventDefault();
+  if (popup.classList.contains("modal-open")) {
+    popup.classList.remove("modal-open");
+    popup.classList.add("modal-close");
+  } else {
+  popup.classList.remove("modal-close");
   popup.classList.add("modal-open");
-  popup.classList.toggle("modal-open");
-  popup.classList.toggle("modal-close");
+}
   datestart.focus();
   if (storage1) {
     adult.value = storage1;
@@ -23,7 +28,6 @@ search.addEventListener("click", function (evt) {
 });
 
 popup.addEventListener("submit", function (evt) {
-  evt.preventDefault();
   if (!datestart.value || !datefinish.value || !adult.value || !child.value) {
     evt.preventDefault();
   } else {
