@@ -427,7 +427,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 21px;
   color: #fff;
-  margin-left: -32px;
+  margin-left: -4px;
   padding-bottom: 4px;
 }
 
@@ -675,7 +675,7 @@ img {
   align-self: center;
   
   margin-top: -32px;
-  margin-left: 150px;
+  margin-left: 180px;
 }
 
 .form-option {
@@ -683,17 +683,22 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding-top: 28px;
+  padding-left: 60px;
 }
 
 .comfort {
-  padding-left: 73px;
-  margin-left: 30px;
+
 }
 
 .type {
   padding-left: 105px;
   width: 288px;
 }
+
+.comfort-head {
+  
+}
+
 
 .selection {
   display: -webkit-box;
@@ -1183,6 +1188,8 @@ img {
   width: 570px;
   height: 395px;
 
+  padding: 55px 56px;
+
   display: -webkit-box;
 
   display: -ms-flexbox;
@@ -1210,7 +1217,7 @@ img {
 }
 
 .values-departure {
-  margin-left: 55px;
+  margin-left: 56px;
   margin-bottom: 29px;
 }
 
@@ -1263,6 +1270,7 @@ img {
   width: 346px;
   padding-bottom: 6px;
   padding-top: 6px;
+  padding-left: 12px;
   
   background-color: #f2f2f2;
   border: none;
@@ -1377,15 +1385,16 @@ img {
 
 .values-adults {
   margin-left: 54px;
-  margin-right: -9px;
+  margin-right: 0px;
 }
 
 .adult-margin {
   margin-top: 13px;
+  margin-right: 42px;
 }
 
 .child-margin {
- margin-left: 60px;
+ margin-left: 50px;
  margin-top: 13px;
 }
 
@@ -1393,18 +1402,17 @@ img {
   position: absolute;
 
   top: 15px;
-  left: 133px;
+  left: 125px;
 
   background: none;
   border: none;
-  
 }
 
 .form-plus-child {
   position: absolute;
 
   top: 15px;
-  left: 210px;
+  left: 200px;
   background: none;
   border: none;
 }
@@ -1434,13 +1442,13 @@ img {
   position: relative;
   width: 50px;
   height: 23px;
-  padding-left: 6px;
+  padding-left: 38px;
 }
 
 input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
-  left: -33px;
+  left: -5px;
 
   width: 27px;
   height: 23px;

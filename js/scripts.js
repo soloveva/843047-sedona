@@ -15,9 +15,9 @@ search.addEventListener("click", function (evt) {
     popup.classList.remove("modal-open");
     popup.classList.add("modal-close");
   } else {
-  popup.classList.remove("modal-close");
-  popup.classList.add("modal-open");
-}
+    popup.classList.remove("modal-close");
+    popup.classList.add("modal-open");
+  }
   datestart.focus();
   if (storage1) {
     adult.value = storage1;
