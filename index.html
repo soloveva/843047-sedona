@@ -5,7 +5,7 @@
 	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="big-container">
@@ -150,7 +150,7 @@
 	<span class="interest">Заинтересовались?</span>
 	<p class="interest-text">Укажите предполагаемые даты поездки,
 	и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-	<a class="button-search">Поиск гостиницы в Седоне</a>
+	<a class="button-search" href="search.html">Поиск гостиницы в Седоне</a>
 	<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
 		<div class="values-arrive">
 			<label for="datestart-search">Дата заезда:</label>
@@ -174,7 +174,7 @@
 						<rect x="4" y="0" transform="matrix(4.486906e-011 -1 1 4.486906e-011 -2.467795e-010 11)" width="3" height="11"/>
 					</svg>
 				</button>
-				<input class="form-left-3" type="number" name="amount-adult" min="0" max="100" step="1" id="amount-adult">
+				<input class="form-left-3" type="text" name="amount-adult" min="0" max="100" step="1" id="amount-adult" placeholder="2">
 				<button class="form-plus-adults" type="button" aria-label="плюс">
 					<svg width="11px" height="11px">
 						<rect x="4" width="3" height="11"/>
@@ -189,7 +189,7 @@
 						<rect x="4" y="0" transform="matrix(4.486906e-011 -1 1 4.486906e-011 -2.467795e-010 11)" width="3" height="11"/>
 					</svg>
 				</button>
-				<input class="form-left-4" type="number" name="amount-adult-child" min="0" max="100" step="1" id="amount-adult-child">
+				<input class="form-left-4" type="text" name="amount-adult-child" min="0" max="100" step="1" id="amount-adult-child" placeholder="0">
 				<button class="form-plus-child" type="button" aria-label="плюс">
 					<svg width="11px" height="11px">
 						<rect x="4" width="3" height="11"/>
@@ -235,7 +235,7 @@
 		<span class="website">Website by</span>
 		<a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="115px" height="41px" viewBox="0 0 115 41" style="enable-background:new 0 0 115 41;" xml:space="preserve">
-				<path id="html-academy-logo" fill="#231F20" d="M47.9,29.8c-0.2,0.1-0.4,0.1-0.6,0.1c-0.4,0-0.6-0.2-0.6-0.7v-3.3c0-2.8-1.6-4.1-4.1-4.1
+				<path class="html-academy-logo" id="html-academy-logo" fill="#231F20" d="M47.9,29.8c-0.2,0.1-0.4,0.1-0.6,0.1c-0.4,0-0.6-0.2-0.6-0.7v-3.3c0-2.8-1.6-4.1-4.1-4.1
 				c-1.4,0-2.7,0.4-3.4,0.6v1.9c0.8-0.4,1.9-0.7,3.2-0.7c1.5,0,2.3,0.8,2.3,2v0.3c-0.7-0.2-1.6-0.3-2.3-0.3c-1.9,0-4,0.7-4,3.1
 				c0,1.9,1.5,2.8,3.1,2.8c1.4,0,2.5-0.5,3.4-1.2c0.3,0.8,1,1.1,1.8,1.1c0.4,0,0.9-0.1,1.3-0.2L47.9,29.8L47.9,29.8z M44.6,28.9
 				C43.9,29.6,43,30,42.1,30c-0.9,0-1.7-0.5-1.7-1.4c0-1.2,1.2-1.5,2.3-1.5c0.6,0,1.4,0.1,1.9,0.2L44.6,28.9L44.6,28.9z M53.5,31.6

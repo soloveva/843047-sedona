@@ -65,8 +65,7 @@ body {
 } 
 
 .hotels {
-  text-align: right;
-  
+  text-align: right; 
 }
 
 .logo {
@@ -196,6 +195,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #333;
   padding-bottom: 15px;
+  font-weight: normal;
 }
 
 .promo-1 {
@@ -748,7 +748,7 @@ img {
 }
 
 .selection-switcher-2 polyline {
-  fill: #cacaca;
+  fill: #81b3d2;
 }
 
 .selection-switcher-1:hover {
@@ -1196,7 +1196,7 @@ img {
 }
 
 .values-departure {
-  margin-left: 56px;
+  margin-left: 57px;
   margin-bottom: 29px;
 }
 
@@ -1214,7 +1214,6 @@ img {
 }
 
 .form-left-3 {
- padding-left: 5px;
  margin-top: 3px;
  text-align: center;
 }
@@ -1240,7 +1239,7 @@ img {
   width: 580px;
 }
 
-.form-search input[type="text"] {
+.values-arrive input[type="text"] {
   font: inherit;
   color: #000000;
   text-transform: uppercase;
@@ -1255,10 +1254,27 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
-.form-search input[type="number"] {
+.values-departure input[type="text"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 346px;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-left: 9px;
+  
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+}
+.person input[type="text"] {
   font: inherit;
   color: #000000;
   text-transform: uppercase;
@@ -1270,9 +1286,9 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 5px;
-  padding-left: 26px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
 }
 
 .form-search input[type="text"]:hover {
@@ -1281,27 +1297,18 @@ img {
 
 .form-search input[type="text"]:focus {
   background-color: #ffffff;
-  border: 1px solid #e5e5e5;
-}
-
-.form-search input[type="number"]:hover {
-  background-color: #ebebeb;
-}
-
-.form-search input[type="number"]:focus {
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .calendar-svg-arrive {
   position: absolute;
-  top: 63px;
+  top: 60px;
   left: 483px;
 }
 
 .calendar-svg-departure {
   position: absolute;
-  top: 128px;
+  top: 129px;
   left: 483px;
 }
 
@@ -1359,28 +1366,28 @@ img {
 }
 
 .values-child {
-  margin-right: 68px;
+  margin-right: 67px;
 }
 
 .values-adults {
-  margin-left: 54px;
+  margin-left: 53px;
   margin-right: 0px;
 }
 
 .adult-margin {
-  margin-top: 13px;
+  margin-top: 10px;
   margin-right: 42px;
 }
 
 .child-margin {
- margin-left: 50px;
- margin-top: 13px;
+ margin-left: 52px;
+ margin-top: 10px;
 }
 
 .form-minus-child {
   position: absolute;
 
-  top: 15px;
+  top: 13px;
   left: 125px;
 
   background: none;
@@ -1390,7 +1397,7 @@ img {
 .form-plus-child {
   position: absolute;
 
-  top: 15px;
+  top: 13px;
   left: 200px;
   background: none;
   border: none;
@@ -1399,7 +1406,7 @@ img {
 .form-minus-adults {
   position: absolute;
 
-  top: 15px;
+  top: 13px;
   left: 120px;
   background: none;
   border: none;
@@ -1408,8 +1415,8 @@ img {
 .form-plus-adults {
   position: absolute;
 
-  top: 15px;
-  left: 196px;
+  top: 13px;
+  left: 198px;
   background: none;
   border: none;
 }
@@ -1473,11 +1480,11 @@ input[type="checkbox"]:disabled + .checkbox-indicator {
   background-image: url("../img/map.jpg");
 }
 
-svg:hover path {
+svg:hover .html-academy-logo {
   fill: #81b3d2;
 }
 
-svg:active path {
+svg:active .html-academy-logo {
   fill: #bdbbbc;
 }
 
@@ -1499,7 +1506,7 @@ svg:active path {
   margin-top: -5px;
 }
 
-li .hotels {
+li .habitation {
   color: #766357;
 }
 
