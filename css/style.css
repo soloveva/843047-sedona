@@ -77,7 +77,6 @@ body {
   z-index: 1;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -485,6 +484,12 @@ input[type="radio"].visually-hidden {
 .dotted:active {
   color: #000;
   border: none;
+}
+
+.price {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
 }
 
 .price:hover {
