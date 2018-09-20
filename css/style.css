@@ -20,7 +20,7 @@ body {
   background-position: 370px 75px, 0px 451px,  -1px -55px;
   background-size: 459px 353px, 1201px 59px, auto auto;
 
-  height: 508px;  
+  height: 507px;  
   overflow-y: hidden;
   margin-bottom: 60px;
 }
@@ -151,7 +151,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #fff;
   padding-top: 48px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
   width: 124px;
   margin: 0 auto;
 }
@@ -257,7 +257,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #000;
   padding-top: 63px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 }
 
 .title3 {
@@ -1587,7 +1587,7 @@ li .habitation {
 .reasons-1-number::before {
   content: "";
   position: absolute;
-  top: 122px;
+  top: 123px;
   left: 173px;
   width: 9px;
   height: 1px;
@@ -1597,7 +1597,7 @@ li .habitation {
 .reasons-1-number::after {
   content: "";
   position: absolute;
-  top: 122px;
+  top: 123px;
   left: 217px;
   width: 9px;
   height: 1px;
@@ -1660,8 +1660,8 @@ li .habitation {
 .line4::before {
   content: "";
   position: absolute;
-  top: 138px;
-  left: 123px;
+  top: 140px;
+  left: 127px;
   width: 9px;
   height: 1px;
   background-color: #333;
@@ -1670,8 +1670,8 @@ li .habitation {
 .line4::after {
   content: "";
   position: absolute;
-  top: 138px;
-  left: 167px;
+  top: 140px;
+  left: 169px;
   width: 9px;
   height: 1px;
   background-color: #333;
