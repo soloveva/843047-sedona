@@ -490,6 +490,7 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   line-height: 18px;
   color: #81b3d2;
+
 }
 
 .price:hover {
@@ -661,7 +662,7 @@ img {
   url("../img/filter_background.jpg");
   background-repeat: no-repeat;
 
-  height: 216px;  
+  height: 217px;  
   overflow-y: hidden;
 }
 
@@ -700,7 +701,7 @@ img {
   padding-top: 8px;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 }
 
 .selection-head {
@@ -708,8 +709,8 @@ img {
 }
 
 .selection-sort {
-  padding-left: 48px;
-  padding-top: 5px;
+  padding-left: 47px;
+  padding-top: 6px;
   padding-right: 5px;
 }
 
@@ -727,7 +728,7 @@ img {
 }
 
 .selection-option-total {
-  margin-right: 466px;
+  margin-right: 472px;
 }
 
 .selection-switcher-1 {
@@ -736,14 +737,14 @@ img {
   -ms-grid-row-align: center;
   
   align-self: center;
-  margin-top:5px;
+  margin-top:7px;
   background: none;
   border: none;
 }
 
 .selection-switcher-2 {
-  padding-left: 7px;
-  margin-top:5px;
+  padding-left: 12px;
+  margin-top:7px;
   background: none;
   border: none;
 }
@@ -1102,7 +1103,7 @@ img {
   background-color: #5496bd;
 }
 
-.social-button path:active {
+.social-button:active path {
   fill: rgba(255, 255, 255, 0.5);
 }
 
@@ -1708,4 +1709,33 @@ li .habitation {
 
 .hashtag-inner {
  margin-left: 23px;
+ margin-right: 5px;
+}
+
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000;
 }
